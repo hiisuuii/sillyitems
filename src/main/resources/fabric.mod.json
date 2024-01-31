@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"fabric-datagen": [
-			"hisui.sillyitems.datagen.AzidoazideazideDatagen"
+			"hisui.sillyitems.datagen.SillyitemsDatagen"
 		],
 		"main": [
 			"hisui.sillyitems.SillyItems"
