@@ -22,13 +22,13 @@
 			"hisui.sillyitems.SillyItems"
 		],
 		"client": [
-			"hisui.sillyitems.AzidoazideazideClient"
+			"hisui.sillyitems.SillyItemsClient"
 		]
 	},
 	"mixins": [
 		"sillyitems.mixins.json",
 		{
-			"config": "azidoazideazide.client.mixins.json",
+			"config": "sillyitems.client.mixins.json",
 			"environment": "client"
 		}
 	],
