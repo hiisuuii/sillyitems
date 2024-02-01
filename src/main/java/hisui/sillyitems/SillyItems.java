@@ -17,7 +17,7 @@ public class SillyItems implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors
 
 	public static final String MODID = "sillyitems";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
+	public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
 
 	public static final Item AZIDOAZIDEAZIDE = new AzidoazideAzideItem(new FabricItemSettings());
 
