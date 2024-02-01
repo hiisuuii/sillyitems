@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "azidoazideazide",
+	"id": "sillyitems",
 	"version": "${version}",
-	"name": "azidoazideazide",
+	"name": "sillyitems",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -11,18 +11,18 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/sillyitems/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"fabric-datagen": [
-			"hisui.sillyitems.datagen.SillyitemsDatagen"
-		],
 		"main": [
-			"hisui.sillyitems.SillyItems"
+          "hisui.sillyitems.SillyItems"
 		],
 		"client": [
 			"hisui.sillyitems.SillyItemsClient"
+		],
+		"fabric-datagen": [
+			"hisui.sillyitems.SillyItemsDataGenerator"
 		]
 	},
 	"mixins": [

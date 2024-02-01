@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/mushroom_stew",
+    "layer1": "sillyitems:item/blindness_stew_overlay"
+  }
+}
