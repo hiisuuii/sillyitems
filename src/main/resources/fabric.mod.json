@@ -26,11 +26,6 @@
 		]
 	},
 	"mixins": [
-		"sillyitems.mixins.json",
-		{
-			"config": "sillyitems.client.mixins.json",
-			"environment": "client"
-		}
 	],
 	"depends": {
 		"fabricloader": ">=0.15.6",

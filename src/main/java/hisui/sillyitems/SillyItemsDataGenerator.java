@@ -11,6 +11,7 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 
@@ -39,6 +40,8 @@ public class SillyItemsDataGenerator implements DataGeneratorEntrypoint {
 		public void generateItemModels(ItemModelGenerator itemModelGenerator){
 
 			itemModelGenerator.register(SillyItems.AZIDOAZIDEAZIDE, Models.GENERATED);
+			itemModelGenerator.register(SillyItems.EMPTY_STANLEY, Models.GENERATED);
+			itemModelGenerator.register(SillyItems.FILLED_STANLEY, Models.GENERATED);
 		}
 	}
 
@@ -85,6 +88,11 @@ public class SillyItemsDataGenerator implements DataGeneratorEntrypoint {
 		public void generateTranslations(TranslationBuilder tb) {
 			tb.add(SillyItems.AZIDOAZIDEAZIDE, "Azidoazide Azide");
 			tb.add(SillyItems.BLINDNESS_SOUP, "1-Day Blindness Stew");
+			tb.add(SillyItems.EMPTY_STANLEY, "Stanley Cup");
+			tb.add(SillyItems.FILLED_STANLEY, "Stanley Cup (Filled)");
+			tb.add(SillyItems.EMPTY_STANLEY.getTranslationKey() + ".desc", "Contains Lead");
+			tb.add(SillyItems.FILLED_STANLEY.getTranslationKey() + ".desc", "Contains Lead");
+			tb.add(SillyItems.AZIDOAZIDEAZIDE.getTranslationKey() + ".desc", "C₂N₁₄");
 		}
 	}
 }

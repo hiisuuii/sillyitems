@@ -1,6 +1,8 @@
 package hisui.sillyitems;
 
 import hisui.sillyitems.item.AzidoazideAzideItem;
+import hisui.sillyitems.item.EmptyStanleyCupItem;
+import hisui.sillyitems.item.FilledStanleyCupItem;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -27,6 +29,9 @@ public class SillyItems implements ModInitializer {
 					new StatusEffectInstance(StatusEffects.BLINDNESS, 24000), 1).alwaysEdible().build()
 			)
 	), "blindness_stew");
+	public static final Item EMPTY_STANLEY = registerItem(new EmptyStanleyCupItem(new Item.Settings().maxCount(1)), "empty_stanley");
+	public static final Item FILLED_STANLEY = registerItem(new FilledStanleyCupItem(new Item.Settings().maxCount(1)), "filled_stanley");
+
 
 	public static Item registerItem(Item item, String name){
 		return Registry.register(Registries.ITEM, new Identifier(MODID, name), item);
