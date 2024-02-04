@@ -13,12 +13,34 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_dirt": {
+    "has_brown_mushroom": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:dirt"
+              "minecraft:brown_mushroom"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_coals": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:coals"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_rotten_flesh": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:rotten_flesh"
             ]
           }
         ]
@@ -34,7 +56,10 @@
   },
   "requirements": [
     [
-      "has_dirt",
+      "has_rotten_flesh",
+      "has_brown_mushroom",
+      "has_coal",
+      "has_charcoal",
       "has_azidoazideazide",
       "has_the_recipe"
     ]

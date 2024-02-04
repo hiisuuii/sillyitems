@@ -4,5 +4,6 @@
   "item.sillyitems.blindness_stew": "1-Day Blindness Stew",
   "item.sillyitems.empty_stanley": "Stanley Cup",
   "item.sillyitems.empty_stanley.desc": "Contains Lead",
-  "item.sillyitems.filled_stanley": "Stanley Cup (Filled)"
+  "item.sillyitems.filled_stanley": "Stanley Cup (Filled)",
+  "item.sillyitems.filled_stanley.desc": "Contains Lead"
 }

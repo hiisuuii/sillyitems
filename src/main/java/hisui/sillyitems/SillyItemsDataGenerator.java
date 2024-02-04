@@ -14,6 +14,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.function.Consumer;
 
@@ -53,9 +54,16 @@ public class SillyItemsDataGenerator implements DataGeneratorEntrypoint {
 
 		@Override
 		public void generate(Consumer<RecipeJsonProvider> exporter) {
-			ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, SillyItems.AZIDOAZIDEAZIDE).input(Items.DIRT)
-					.criterion(FabricRecipeProvider.hasItem(Items.DIRT),
-							FabricRecipeProvider.conditionsFromItem(Items.DIRT))
+			ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, SillyItems.AZIDOAZIDEAZIDE)
+					.input(Items.ROTTEN_FLESH, 3).input(Items.BROWN_MUSHROOM).input(ItemTags.COALS)
+					.criterion(FabricRecipeProvider.hasItem(Items.ROTTEN_FLESH),
+							FabricRecipeProvider.conditionsFromItem(Items.ROTTEN_FLESH))
+					.criterion(FabricRecipeProvider.hasItem(Items.BROWN_MUSHROOM),
+							FabricRecipeProvider.conditionsFromItem(Items.BROWN_MUSHROOM))
+					.criterion(FabricRecipeProvider.hasItem(Items.COAL),
+							FabricRecipeProvider.conditionsFromTag(ItemTags.COALS))
+					.criterion(FabricRecipeProvider.hasItem(Items.CHARCOAL),
+							FabricRecipeProvider.conditionsFromTag(ItemTags.COALS))
 					.criterion(FabricRecipeProvider.hasItem(SillyItems.AZIDOAZIDEAZIDE),
 							FabricRecipeProvider.conditionsFromItem(SillyItems.AZIDOAZIDEAZIDE)).offerTo(exporter);
 
